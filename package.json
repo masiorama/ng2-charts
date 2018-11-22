@@ -15,6 +15,7 @@
     "flow.changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
     "flow.github-release": "conventional-github-releaser -p angular",
     "build": "ngm build -p src --clean",
+    "prepare": "npm run build",
     "build.watch": "ngm build -p src --watch --skip-bundles",
     "start": "ng serve --aot",
     "pretest": "run-s lint build link",
